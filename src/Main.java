@@ -13,5 +13,9 @@ public class Main {
         System.out.println("Perimeter: " + rectangleOne.getPerimeter());
         System.out.println("Area: " + rectangleOne.getArea());
 
+        Dog dog = new Dog("jimmy");
+        dog.eat();
+        dog.bark();
+        System.out.println(" - " + dog.getName());
     }
 }
