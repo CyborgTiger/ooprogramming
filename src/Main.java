@@ -10,7 +10,8 @@ public class Main {
         rectangleOne.setWidth(input.nextDouble());
 
         System.out.println("Height: " + rectangleOne.getHeight() + " Width: " + rectangleOne.getWidth());
-
+        System.out.println("Perimeter: " + rectangleOne.getPerimeter());
+        System.out.println("Area: " + rectangleOne.getArea());
 
     }
 }
