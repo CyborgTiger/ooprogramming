@@ -5,33 +5,33 @@ public class Person {
     private String address;
     private int age;
 
-    public Person(String name, String address, int age){
+    protected Person(String name, String address, int age){
         this.name = name;
         this.address = address;
         this.age = age;
     }
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    protected void setName(String name) {
         this.name = name;
     }
 
-    public String getAddress() {
+    protected String getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    protected void setAddress(String address) {
         this.address = address;
     }
 
-    public int getAge() {
+    protected int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    protected void setAge(int age) {
         this.age = age;
     }
 

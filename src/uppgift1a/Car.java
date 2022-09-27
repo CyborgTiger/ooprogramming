@@ -4,17 +4,25 @@ public class Car {
     private String registryNumber;
     private String brand;
 
-    public Car(String registryNumber, String brand) {
+    protected Car(String registryNumber, String brand) {
         this.registryNumber = registryNumber;
         this.brand = brand;
     }
 
-    public String getRegistryNumber() {
+    protected String getRegistryNumber() {
         return registryNumber;
     }
 
-    public void setRegistryNumber(String registryNumber) {
+    protected void setRegistryNumber(String registryNumber) {
         this.registryNumber = registryNumber;
+    }
+
+    protected String getBrand() {
+        return brand;
+    }
+
+    protected void setBrand(String brand) {
+        this.brand = brand;
     }
 
     @Override

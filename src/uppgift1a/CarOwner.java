@@ -1,35 +1,41 @@
 package uppgift1a;
 
+import java.util.ArrayList;
+
 public class CarOwner extends Person{
     private Person person;
-    private Car car;
-    public CarOwner(Person person, Car car){
+    private ArrayList<Car> cars;
+    protected CarOwner(Person person){
         super(person.getName(), person.getAddress(), person.getAge());
         this.person = person;
-        this.car = car;
+        this.cars = new ArrayList<>();
     }
 
-    public Person getPerson() {
+    protected Person getPerson() {
         return person;
     }
 
-    public void setPerson(Person person) {
+    protected void setPerson(Person person) {
         this.person = person;
     }
 
-    public Car getCar() {
-        return car;
+    protected ArrayList<Car> getCars() {
+        return cars;
     }
 
-    public void setCar(Car car) {
-        this.car = car;
+    protected void addCar(Car car) {
+        cars.add(car);
+    }
+
+    protected void removeCar(Car car){
+        cars.remove(car);
     }
 
     @Override
     public String toString() {
         return "uppgift1a.CarOwner{" +
                 "person=" + person +
-                ", car=" + car +
+                ", cars=" + cars.toString() +
                 '}';
     }
 }
