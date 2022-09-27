@@ -1,3 +1,5 @@
+package uppgift1a;
+
 public class Car {
     private String registryNumber;
     private String brand;
@@ -17,7 +19,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "uppgift1a.Car{" +
                 "registryNumber='" + registryNumber + '\'' +
                 ", brand='" + brand + '\'' +
                 '}';

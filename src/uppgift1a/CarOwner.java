@@ -1,3 +1,5 @@
+package uppgift1a;
+
 public class CarOwner extends Person{
     private Person person;
     private Car car;
@@ -25,7 +27,7 @@ public class CarOwner extends Person{
 
     @Override
     public String toString() {
-        return "CarOwner{" +
+        return "uppgift1a.CarOwner{" +
                 "person=" + person +
                 ", car=" + car +
                 '}';
